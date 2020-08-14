@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteiner{
+            background: blueviolet;
+            color: #fff;
+            margin: 40px 0;
+            /*static ele não aceita nem um comando e volta forma normal*/
+            /*position:static;*/
+            position: relative;
+        }
+        .filho-relative{
+            background: red;
+            position: relative;
+            top: 10px;
+            left: 20px;
+            bottom: 20px;
+            right: 50px;
+
+            width: 120px;
+        }
+
+        .filho-absolute{
+            background: red;
+            position: absolute;
+
+            top: 100px;
+            right: 10px;
+        }
+
+        .fixed{
+            font-size: 50px;
+            position:absolute;
+            background: brown;
+            color:#fff;
+            top:0;
+            position: fixed;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        Texto Fixed
+    </div>
+    <div class="conteiner">
+        Texto-1
+
+        <div class="filho-relative">
+            Texto-2
+        </div>
+
+        <div>
+            Texto-3
+        </div>
+    </div>
+
+        <div class="conteiner">
+            Texto-1
+    
+            <div class="filho-absolute">
+                Texto-2
+            </div>
+    
+                Texto-3
+            </div>
+    </div>
+
+    <div class="conteiner">
+        Texto-1
+
+        <div class="filho-relative">
+            Texto-2
+        </div>
+
+        <div>
+            Texto-3
+        </div>
+    </div>
+
+        <div class="conteiner">
+            Texto-1
+    
+            <div class="filho-absolute">
+                Texto-2
+            </div>
+    
+                Texto-3
+            </div>
+    </div>
+
+    <div class="conteiner">
+        Texto-1
+
+        <div class="filho-relative">
+            Texto-2
+        </div>
+
+        <div>
+            Texto-3
+        </div>
+    </div>
+
+        <div class="conteiner">
+            Texto-1
+    
+            <div class="filho-absolute">
+                Texto-2
+            </div>
+    
+                Texto-3
+            </div>
+    </div>
+
+    
+</body>
+</html>
